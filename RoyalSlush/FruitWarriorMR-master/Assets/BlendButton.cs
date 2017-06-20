@@ -35,9 +35,38 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 		if(blenderOn){
 			TurnOffBlender();
 			blenderOn = false;
+
 		}else{
 			blenderOn = true;
 			TurnOnBlender();
+
+			LeanTween.delayedCall(5, () => {
+				TurnOffBlender();
+				blenderOn = false;
+
+				foreach(SmoothieItem item in BlenderController.Instance.smoothiItems)
+				{
+					string itemType = item.type.ToString();
+					//print(item.type.ToString());
+
+					if (itemType == "Skull")
+					{
+						//Customer.Validate(RoyalSlushController.Instance.currentCustomer.order.modifier, item.type);
+						print (RoyalSlushController.Instance.currentCustomer.order.modifier.ToString());
+						print(item.type.ToString());
+					}
+					else if (itemType == "Hammer")
+					{
+						
+					} 
+					else if (itemType == "Cheese")
+					{
+						
+					}
+
+				}
+
+			});
 		}
 			
 		//SceneManager.LoadScene("Main");
