@@ -29,6 +29,14 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 		{
 			OnStrawberry();
 		}
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            OnBroccolli();
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            OnBanana();
+        }
     }
 
     void OnStart()
