@@ -16,6 +16,19 @@ public class SpeechManager : MonoBehaviour
             // Call the OnStart method on every descendant object.
             this.BroadcastMessage("OnStart");
         });
+
+        keywords.Add("Watermelon", () =>
+        {
+            // Call the OnWatermelon method on every descendant object.
+            this.BroadcastMessage("OnWatermelon");
+        });
+
+        keywords.Add("Grapes", () =>
+        {
+            // Call the OnGrapes method on every descendant object.
+            this.BroadcastMessage("OnGrapes");
+        });
+
         keywords.Add("Restart Game", () =>
         {
             // Call the OnReset method on every descendant object.
