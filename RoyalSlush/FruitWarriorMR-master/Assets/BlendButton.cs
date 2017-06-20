@@ -10,6 +10,7 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 	bool blenderOn = false;
 
 	public GameObject blenderGo;
+
 	Vector3 blenderGoStr;
 
 	void Start(){
@@ -23,7 +24,7 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 		TurnOnBlender();
 	}
 
-	void OnBlend()
+	public void OnBlend()
 	{
 		if(blenderOn){
 			TurnOffBlender();
@@ -32,8 +33,7 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 			blenderOn = true;
 			TurnOnBlender();
 		}
-
-
+			
 		//SceneManager.LoadScene("Main");
 	}
 
@@ -69,6 +69,7 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 			
 		AudioController.getSingleton().PlaySFX("Sounds/Blender on Blend Sound Effect");
 		AudioController.getSingleton().PlaySFX("Sounds/Toggle-SoundBible.com-231290292");
+
 
 
 	

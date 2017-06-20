@@ -14,5 +14,7 @@ public class SmoothieItem : MonoBehaviour {
 public enum SmoothieItemType {
 	Apple,
 	Cucumber,
-	Watermelon
+	Watermelon,
+    Broccolli,
+    Banana
 }
