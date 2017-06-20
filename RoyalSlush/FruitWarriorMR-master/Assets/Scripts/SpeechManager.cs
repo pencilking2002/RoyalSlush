@@ -17,6 +17,10 @@ public class SpeechManager : MonoBehaviour
             this.BroadcastMessage("OnStart");
         });
 
+		/*
+		 * FOOD WORDS
+		 */
+
         keywords.Add("Watermelon", () =>
         {
             // Call the OnWatermelon method on every descendant object.
@@ -28,6 +32,19 @@ public class SpeechManager : MonoBehaviour
             // Call the OnGrapes method on every descendant object.
             this.BroadcastMessage("OnGrapes");
         });
+
+		keywords.Add("Strawberry", () =>
+		{
+			// Call the OnGrapes method on every descendant object.
+			this.BroadcastMessage("OnGrapes");
+		});
+
+
+
+
+
+
+
 
         keywords.Add("Restart Game", () =>
         {

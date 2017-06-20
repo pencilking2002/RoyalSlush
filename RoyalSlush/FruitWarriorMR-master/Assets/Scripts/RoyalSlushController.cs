@@ -24,6 +24,11 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
         {
             OnGrapes();
         }
+
+		if (Input.GetKeyDown(KeyCode.I))
+		{
+			OnStrawberry();
+		}
     }
 
     void OnStart()
@@ -34,11 +39,23 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 
     void OnWatermelon()
     {
-        Instantiate(Resources.Load("Watermelon"), transform.position, Quaternion.identity);
+		Instantiate(Resources.Load("Watermelon"), transform.position + randomOffset(), Random.rotation );
     }
 
     void OnGrapes()
     {
-        Instantiate(Resources.Load("Grapes"), transform.position, Quaternion.identity);
+		Instantiate(Resources.Load("Grapes"), transform.position + randomOffset(), Random.rotation);
     }
+
+	void OnStrawberry()
+	{
+		Instantiate(Resources.Load("Strawberry"), transform.position + randomOffset(), Random.rotation);
+	}
+
+	Vector3 randomOffset(){
+
+		float num = 0.02f;
+
+		return new Vector3(Random.Range(-1 * num, num),Random.Range(-1 * num, num),Random.Range(-1 * num, num ));
+	}
 }

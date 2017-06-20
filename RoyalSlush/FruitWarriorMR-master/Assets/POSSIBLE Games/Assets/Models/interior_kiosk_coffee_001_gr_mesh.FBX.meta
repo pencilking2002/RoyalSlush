@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 215234fa2f6a86e458f279f7f87f96ec
+timeCreated: 1480499306
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: interior_kiosk_coffee_001_gr_element_01
+    100002: interior_kiosk_coffee_001_gr_element_02
+    100004: //RootNode
+    100006: interior_kiosk_coffee_001_gr_element_000
+    100008: interior_kiosk_coffee_001_gr_element_001
+    100010: interior_kiosk_coffee_001_gr_element_002
+    100012: interior_kiosk_coffee_001_gr_element_003
+    100014: interior_kiosk_coffee_001_gr_element_004
+    100016: interior_kiosk_coffee_001_gr_element_005
+    100018: interior_kiosk_coffee_001_gr_element_006
+    100020: interior_kiosk_coffee_001_gr_element_007
+    100022: interior_kiosk_coffee_001_gr_element_008
+    100024: interior_kiosk_coffee_001_gr_element_009
+    100026: interior_kiosk_coffee_001_gr_element_010
+    100028: interior_kiosk_coffee_001_gr_element_011
+    100030: interior_kiosk_coffee_001_gr_element_012
+    100032: interior_kiosk_coffee_001_gr_element_013
+    100034: interior_kiosk_coffee_001_gr_element_014
+    100036: interior_kiosk_coffee_001_gr_element_015
+    100038: interior_kiosk_coffee_001_gr_element_016
+    100040: interior_kiosk_coffee_001_gr_element_017
+    100042: interior_kiosk_coffee_001_gr_element_018
+    100044: interior_kiosk_coffee_001_gr_element_019
+    100046: interior_kiosk_coffee_001_gr_element_020
+    100048: interior_kiosk_coffee_001_gr_element_021
+    100050: interior_kiosk_coffee_001_gr_element_022
+    100052: interior_kiosk_coffee_001_gr_element_023
+    100054: interior_kiosk_coffee_001_gr_element_024
+    100056: interior_kiosk_coffee_001_gr_element_025
+    400000: interior_kiosk_coffee_001_gr_element_01
+    400002: interior_kiosk_coffee_001_gr_element_02
+    400004: //RootNode
+    400006: interior_kiosk_coffee_001_gr_element_000
+    400008: interior_kiosk_coffee_001_gr_element_001
+    400010: interior_kiosk_coffee_001_gr_element_002
+    400012: interior_kiosk_coffee_001_gr_element_003
+    400014: interior_kiosk_coffee_001_gr_element_004
+    400016: interior_kiosk_coffee_001_gr_element_005
+    400018: interior_kiosk_coffee_001_gr_element_006
+    400020: interior_kiosk_coffee_001_gr_element_007
+    400022: interior_kiosk_coffee_001_gr_element_008
+    400024: interior_kiosk_coffee_001_gr_element_009
+    400026: interior_kiosk_coffee_001_gr_element_010
+    400028: interior_kiosk_coffee_001_gr_element_011
+    400030: interior_kiosk_coffee_001_gr_element_012
+    400032: interior_kiosk_coffee_001_gr_element_013
+    400034: interior_kiosk_coffee_001_gr_element_014
+    400036: interior_kiosk_coffee_001_gr_element_015
+    400038: interior_kiosk_coffee_001_gr_element_016
+    400040: interior_kiosk_coffee_001_gr_element_017
+    400042: interior_kiosk_coffee_001_gr_element_018
+    400044: interior_kiosk_coffee_001_gr_element_019
+    400046: interior_kiosk_coffee_001_gr_element_020
+    400048: interior_kiosk_coffee_001_gr_element_021
+    400050: interior_kiosk_coffee_001_gr_element_022
+    400052: interior_kiosk_coffee_001_gr_element_023
+    400054: interior_kiosk_coffee_001_gr_element_024
+    400056: interior_kiosk_coffee_001_gr_element_025
+    2300000: interior_kiosk_coffee_001_gr_element_01
+    2300002: interior_kiosk_coffee_001_gr_element_02
+    2300004: interior_kiosk_coffee_001_gr_element_000
+    2300006: interior_kiosk_coffee_001_gr_element_001
+    2300008: interior_kiosk_coffee_001_gr_element_002
+    2300010: interior_kiosk_coffee_001_gr_element_003
+    2300012: interior_kiosk_coffee_001_gr_element_004
+    2300014: interior_kiosk_coffee_001_gr_element_005
+    2300016: interior_kiosk_coffee_001_gr_element_006
+    2300018: interior_kiosk_coffee_001_gr_element_007
+    2300020: interior_kiosk_coffee_001_gr_element_008
+    2300022: interior_kiosk_coffee_001_gr_element_009
+    2300024: interior_kiosk_coffee_001_gr_element_010
+    2300026: interior_kiosk_coffee_001_gr_element_011
+    2300028: interior_kiosk_coffee_001_gr_element_012
+    2300030: interior_kiosk_coffee_001_gr_element_013
+    2300032: interior_kiosk_coffee_001_gr_element_014
+    2300034: interior_kiosk_coffee_001_gr_element_015
+    2300036: interior_kiosk_coffee_001_gr_element_016
+    2300038: interior_kiosk_coffee_001_gr_element_017
+    2300040: interior_kiosk_coffee_001_gr_element_018
+    2300042: interior_kiosk_coffee_001_gr_element_019
+    2300044: interior_kiosk_coffee_001_gr_element_020
+    2300046: interior_kiosk_coffee_001_gr_element_021
+    2300048: interior_kiosk_coffee_001_gr_element_022
+    2300050: interior_kiosk_coffee_001_gr_element_023
+    2300052: interior_kiosk_coffee_001_gr_element_024
+    2300054: interior_kiosk_coffee_001_gr_element_025
+    3300000: interior_kiosk_coffee_001_gr_element_01
+    3300002: interior_kiosk_coffee_001_gr_element_02
+    3300004: interior_kiosk_coffee_001_gr_element_000
+    3300006: interior_kiosk_coffee_001_gr_element_001
+    3300008: interior_kiosk_coffee_001_gr_element_002
+    3300010: interior_kiosk_coffee_001_gr_element_003
+    3300012: interior_kiosk_coffee_001_gr_element_004
+    3300014: interior_kiosk_coffee_001_gr_element_005
+    3300016: interior_kiosk_coffee_001_gr_element_006
+    3300018: interior_kiosk_coffee_001_gr_element_007
+    3300020: interior_kiosk_coffee_001_gr_element_008
+    3300022: interior_kiosk_coffee_001_gr_element_009
+    3300024: interior_kiosk_coffee_001_gr_element_010
+    3300026: interior_kiosk_coffee_001_gr_element_011
+    3300028: interior_kiosk_coffee_001_gr_element_012
+    3300030: interior_kiosk_coffee_001_gr_element_013
+    3300032: interior_kiosk_coffee_001_gr_element_014
+    3300034: interior_kiosk_coffee_001_gr_element_015
+    3300036: interior_kiosk_coffee_001_gr_element_016
+    3300038: interior_kiosk_coffee_001_gr_element_017
+    3300040: interior_kiosk_coffee_001_gr_element_018
+    3300042: interior_kiosk_coffee_001_gr_element_019
+    3300044: interior_kiosk_coffee_001_gr_element_020
+    3300046: interior_kiosk_coffee_001_gr_element_021
+    3300048: interior_kiosk_coffee_001_gr_element_022
+    3300050: interior_kiosk_coffee_001_gr_element_023
+    3300052: interior_kiosk_coffee_001_gr_element_024
+    3300054: interior_kiosk_coffee_001_gr_element_025
+    4300000: interior_kiosk_coffee_001_gr_element_01
+    4300002: interior_kiosk_coffee_001_gr_element_02
+    4300004: interior_kiosk_coffee_001_gr_element_000
+    4300006: interior_kiosk_coffee_001_gr_element_001
+    4300008: interior_kiosk_coffee_001_gr_element_002
+    4300010: interior_kiosk_coffee_001_gr_element_003
+    4300012: interior_kiosk_coffee_001_gr_element_004
+    4300014: interior_kiosk_coffee_001_gr_element_005
+    4300016: interior_kiosk_coffee_001_gr_element_006
+    4300018: interior_kiosk_coffee_001_gr_element_007
+    4300020: interior_kiosk_coffee_001_gr_element_008
+    4300022: interior_kiosk_coffee_001_gr_element_009
+    4300024: interior_kiosk_coffee_001_gr_element_010
+    4300026: interior_kiosk_coffee_001_gr_element_011
+    4300028: interior_kiosk_coffee_001_gr_element_012
+    4300030: interior_kiosk_coffee_001_gr_element_013
+    4300032: interior_kiosk_coffee_001_gr_element_014
+    4300034: interior_kiosk_coffee_001_gr_element_015
+    4300036: interior_kiosk_coffee_001_gr_element_016
+    4300038: interior_kiosk_coffee_001_gr_element_017
+    4300040: interior_kiosk_coffee_001_gr_element_018
+    4300042: interior_kiosk_coffee_001_gr_element_019
+    4300044: interior_kiosk_coffee_001_gr_element_020
+    4300046: interior_kiosk_coffee_001_gr_element_021
+    4300048: interior_kiosk_coffee_001_gr_element_022
+    4300050: interior_kiosk_coffee_001_gr_element_023
+    4300052: interior_kiosk_coffee_001_gr_element_024
+    4300054: interior_kiosk_coffee_001_gr_element_025
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 2
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
