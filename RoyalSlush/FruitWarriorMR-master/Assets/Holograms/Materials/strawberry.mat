@@ -8,8 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: strawberry
   m_Shader: {fileID: 4800000, guid: b4889abb552b5e141833ad2d90a4519b, type: 3}
-  m_ShaderKeywords: ZEROLUNCH_DIFFUSE_LIGHTING ZEROLUNCH_ENABLE_FOG ZEROLUNCH_RIM_LIGHTING
-    _EMISSION
+  m_ShaderKeywords: ZEROLUNCH_ENABLE_FOG ZEROLUNCH_RIM_LIGHTING _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_CustomRenderQueue: -1
@@ -40,7 +39,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 20, y: 20}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -61,11 +60,11 @@ Material:
     - _DiffuseExponent: 1
     - _DstBlend: 0
     - _EnableAdvanced: 0
-    - _EnableDiffuseLighting: 1
+    - _EnableDiffuseLighting: 0
     - _EnableFog: 1
     - _EnableRimLighting: 1
     - _EnableRunnersVision: 0
-    - _FogFraction: 1
+    - _FogFraction: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -74,7 +73,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RestrictHDRLights: 0
-    - _RimExponent: 0.33
+    - _RimExponent: 0.79
     - _ScaleLightingIntensity: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -82,8 +81,8 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.5294118, g: 0, b: 0.0001898373, a: 1}
-    - _EmissionColor: {r: 0.24264705, g: 0, b: 0, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.5, g: 0, b: 0, a: 1}
     - _MaxColorIntensity: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 1, g: 0.25, b: 0.25, a: 1}
+    - _RimColor: {r: 0.6397059, g: 0, b: 0, a: 1}
     - _RunnersVisionColor: {r: 0, g: 0, b: 0, a: 0}

@@ -77,8 +77,8 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RestrictHDRLights: 0
-    - _RimExponent: 0.19
+    - _RestrictHDRLights: 0.376
+    - _RimExponent: 0.32
     - _ScaleLightingIntensity: 1
     - _Shininess: 3
     - _SmoothnessTextureChannel: 0
@@ -87,10 +87,10 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.059000015, g: 0.0052510006, b: 0.050844982, a: 1}
-    - _EmissionColor: {r: 0.10811358, g: 0.38235295, b: 0, a: 1}
+    - _Color: {r: 0.060649145, g: 0.38235295, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0.32352942, b: 0.055780947, a: 1}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
     - _MaxColorIntensity: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 0.3823529, g: 1, b: 0.3602941, a: 1}
+    - _RimColor: {r: 0.40882358, g: 1, b: 0.3602941, a: 1}
     - _RunnersVisionColor: {r: 0, g: 0, b: 0, a: 0}
     - _Specular: {r: 0.08, g: 0.075, b: 0.065, a: 1}
