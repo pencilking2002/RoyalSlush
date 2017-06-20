@@ -57,6 +57,15 @@ public class BlenderController : MonoBehaviour {
 		}
 	}
 
+	public void TryToBlend(SmoothieItem item){
+
+		if (!smoothiItems.Contains (item)) 
+		{
+			smoothiItems.Remove(item);
+			Destroy(item.gameObject);
+		}
+	}
+
 	private void InitInstance()
 	{
 		if (Instance == null)

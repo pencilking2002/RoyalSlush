@@ -110,6 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 4
+  color: {r: 1, g: 1, b: 0, a: 1}
 --- !u!136 &136846446183542136
 CapsuleCollider:
   m_ObjectHideFlags: 1
