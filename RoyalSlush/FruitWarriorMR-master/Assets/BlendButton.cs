@@ -10,6 +10,7 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 	bool blenderOn = false;
 
 	public GameObject blenderGo;
+
 	Vector3 blenderGoStr;
 
 	void Start(){
@@ -32,8 +33,7 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 			blenderOn = true;
 			TurnOnBlender();
 		}
-
-
+			
 		//SceneManager.LoadScene("Main");
 	}
 
