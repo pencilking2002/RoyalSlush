@@ -52,7 +52,17 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 		Instantiate(Resources.Load("Strawberry"), transform.position + randomOffset(), Random.rotation);
 	}
 
-	Vector3 randomOffset(){
+    void OnBroccolli()
+    {
+        Instantiate(Resources.Load("Broccolli"), transform.position + randomOffset(), Random.rotation);
+    }
+
+    void OnBanana()
+    {
+        Instantiate(Resources.Load("Banana"), transform.position + randomOffset(), Random.rotation);
+    }
+
+    Vector3 randomOffset(){
 
 		float num = 0.02f;
 
