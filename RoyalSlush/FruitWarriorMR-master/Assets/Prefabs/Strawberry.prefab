@@ -199,6 +199,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23242676865019848
 MeshRenderer:
@@ -230,6 +231,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23549726293107134
 MeshRenderer:
@@ -264,6 +266,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23722622736495910
 MeshRenderer:
@@ -295,6 +298,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33086300104530332
 MeshFilter:
@@ -459,7 +463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e1306de734793f4189cc662f83681cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitGet: {fileID: 1914331115677498, guid: 7c0fff5c927919540807078dcf4a22d2, type: 2}
 --- !u!135 &135192893580898336
 SphereCollider:
   m_ObjectHideFlags: 1
