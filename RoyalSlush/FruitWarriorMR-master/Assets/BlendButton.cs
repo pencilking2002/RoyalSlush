@@ -23,7 +23,7 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 		TurnOnBlender();
 	}
 
-	void OnBlend()
+	public void OnBlend()
 	{
 		if(blenderOn){
 			TurnOffBlender();
