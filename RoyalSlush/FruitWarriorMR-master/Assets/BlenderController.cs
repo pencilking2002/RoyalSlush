@@ -9,6 +9,8 @@ public class BlenderController : MonoBehaviour {
 
 	public Action onAddSmoothieItem;
 
+	public BlendButton blendButton;
+
 	/// <summary>
 	/// Particles that get emitted when a food item is dropped into the blender
 	/// </summary>

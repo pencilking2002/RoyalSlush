@@ -7,15 +7,21 @@ using UnityEngine.SceneManagement;
 public class BlendButton : MonoBehaviour, IInputClickHandler{
 
 	Vector3 str;
-	bool blenderOn = false;
+	public bool blenderOn = false;
+	public GameObject blades;
 
 	public GameObject blenderGo;
-
 	Vector3 blenderGoStr;
+
+
+	public GameObject tableGo;
+	Vector3 tableGoStr;
+
 
 	void Start(){
 		str = transform.position;
 		blenderGoStr = blenderGo.transform.position;
+		tableGoStr = tableGo.transform.position;
 	}
 
 	public void OnInputClicked(InputEventData eventData)
@@ -51,19 +57,39 @@ public class BlendButton : MonoBehaviour, IInputClickHandler{
 
 			if(shakeTimer < 0){
 
-				blenderGo.transform.position = blenderGoStr + (Random.insideUnitSphere * 0.04f);
+				blenderGo.transform.position = blenderGoStr + (Random.insideUnitSphere * 0.03f);
 
 				//blenderGo.transform.rotation = Random.r
 
-				shakeTimer = 0.01f;
+				shakeTimer = 0.011f;
+
+
+				tableGo.transform.position = tableGoStr + (Random.insideUnitSphere * 0.01f);
 			}
 
 			shakeTimer -= Time.deltaTime;
 
 		}else{
 			blenderGo.transform.position = blenderGoStr;
+			tableGo.transform.position = tableGoStr;
+		}
+
+		// SPIN Blades around
+		if(blades){
+			if(blenderOn){
+				
+				bladeSpeed = 2000f;
+			}
+
+			if(bladeSpeed > 0){
+				bladeSpeed -= 10f;
+			}
+
+			blades.transform.Rotate(Vector3.up * bladeSpeed * Time.deltaTime);
 		}
 	}
+
+	float bladeSpeed = 0;
 
 	void TurnOnBlender(){
 			
