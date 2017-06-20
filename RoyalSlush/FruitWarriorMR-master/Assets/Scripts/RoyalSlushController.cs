@@ -46,16 +46,21 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 		}
         if (Input.GetKeyDown(KeyCode.R))
         {
-            OnBroccolli();
+            OnDeath();
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            OnBanana();
+            OnFunky();
         }
 
         if (Input.GetKeyDown(KeyCode.K))
         {
         	SpawnCustomer();
+        }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            OnPunchInTheFace();
         }
     }
 
