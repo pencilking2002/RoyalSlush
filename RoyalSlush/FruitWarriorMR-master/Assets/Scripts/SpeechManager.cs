@@ -84,6 +84,24 @@ public class SpeechManager : MonoBehaviour
             this.BroadcastMessage("OnPear");
         });
 
+        keywords.Add("Hint Of Death", () =>
+        {
+            // Call the OnDeath method on every descendant object.
+            this.BroadcastMessage("OnDeath");
+        });
+
+        keywords.Add("Hint of Funky", () =>
+        {
+            // Call the OnFunky method on every descendant object.
+            this.BroadcastMessage("OnFunky");
+        });
+
+        keywords.Add("Punch In The Face", () =>
+        {
+            // Call the OnPunchInThFace method on every descendant object.
+            this.BroadcastMessage("OnPunchInTheFace");
+        });
+
         /*
 		 * CONTROL WORDS
 		 */
