@@ -54,7 +54,9 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 
     void OnStart()
     {
-        SceneManager.LoadScene("Main");
+       
+        SpawnCustomer();
+        
     }
 
 
@@ -107,6 +109,8 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
     {
         Instantiate(Resources.Load("Pear"), transform.position + randomOffset(), Random.rotation);
     }
+
+  
 
 
 
