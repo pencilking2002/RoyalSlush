@@ -40,6 +40,17 @@ public class SpeechManager : MonoBehaviour
 		});
 
 
+		/*
+		 * CONTROL WORDS
+		 */
+
+		keywords.Add("Blend", () =>
+		{
+			// Call the OnGrapes method on every descendant object.
+			this.BroadcastMessage("OnBlend");
+		});
+
+		// Open blender?
 
 
 
