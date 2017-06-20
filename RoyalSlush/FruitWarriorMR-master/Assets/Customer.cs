@@ -18,11 +18,13 @@ public enum SmoothieModifier {
 
 
 public class Customer : MonoBehaviour {
+	public static SmoothieOrder currentOrder;
 	public SmoothieOrder order;
 
 	private void Awake()
 	{
 		order = new SmoothieOrder();
+		currentOrder = order;
 	}
 
 
@@ -39,6 +41,17 @@ public class Customer : MonoBehaviour {
 		{ SmoothieModifier.Luck, "luck" },
 		{ SmoothieModifier.TheFunk, "the funk" },
 		{ SmoothieModifier.PunchInTheFace, "punch in the face" }
+	};
+
+	public static List<string> beginList = new List<string>()
+	{
+		{ "Can I get a" },	
+		{ "May I have a" },	
+		{ "Yeah can I get a" },	
+		{ "I REALLY want a" },
+		{ "Yo! Drop me a " },
+		{ "Sup dawg? I'm in the mood for a " }
+
 	};
 
 	public static List<string> hintList = new List<string>()
@@ -74,8 +87,8 @@ public class Customer : MonoBehaviour {
 
 		randNum = UnityEngine.Random.Range(0,5);
 
-		var customerOrder = "I would like a " + order.type + " smoothie " + hintList[randNum] + " " + order.modifier;
-		CanvasController.Instance.ReplaceText(customerOrder);
+		var customerOrder = beginList[UnityEngine.Random.Range(0,7)] + order.type + " smoothie " + hintList[randNum] + " " + order.modifier;
+		CanvasController.Instance.ReplaceText("Smoothie Order: ", customerOrder);
 	}
 }
 

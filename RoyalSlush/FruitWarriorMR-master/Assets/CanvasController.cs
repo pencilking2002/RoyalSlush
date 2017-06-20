@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class CanvasController : MonoBehaviour {
 
 	public static CanvasController Instance;
+	public Text titleText;
 	public Text blackboaxrdText; 
 	private Canvas canvas;
 
@@ -29,8 +30,9 @@ public class CanvasController : MonoBehaviour {
 			Destroy (gameObject);
 	}
 
-	public void ReplaceText(string text)
+	public void ReplaceText(string titleText, string bodyText)
 	{
-		this.blackboaxrdText.text = text;	
+		this.titleText.text = titleText;
+		this.blackboaxrdText.text = bodyText;	
 	}
 }
