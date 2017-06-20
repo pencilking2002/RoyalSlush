@@ -44,6 +44,8 @@ public class BlenderTopButton : MonoBehaviour, IInputClickHandler{
 		}
 	}
 		
+	//int id;
+
 	void OpenBlenderTop(){
 
 
@@ -51,12 +53,13 @@ public class BlenderTopButton : MonoBehaviour, IInputClickHandler{
 
 
 		// Need sound effect
-		LeanTween.rotateAroundLocal(blenderTopGo,Vector3.left, 170f,0.5f).setOnComplete (() => {
+		//if( !LeanTween.isTweening( id ) ){
 
-		
-		AudioController.getSingleton().PlaySFX("Sounds/Sharp Punch-SoundBible.com-1947392621");
-
-		});
+				LeanTween.rotateAroundLocal(blenderTopGo,Vector3.left, 170f,0.5f).setOnComplete (() => {
+	
+				AudioController.getSingleton().PlaySFX("Sounds/Sharp Punch-SoundBible.com-1947392621");
+			});
+		//}
 	}
 
 
@@ -64,8 +67,11 @@ public class BlenderTopButton : MonoBehaviour, IInputClickHandler{
 
 		AudioController.getSingleton().PlaySFX("Sounds/Toggle-SoundBible.com-231290292");
 
+	//	if( !LeanTween.isTweening( id ) ){
 
 		LeanTween.rotateAroundLocal(blenderTopGo,Vector3.left, -170f,0.5f);
+
+		//}
 		/*LeanTween.rotateX(blenderTopGo,170,0.5f).setOnComplete (() => {
 
 
