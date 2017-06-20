@@ -25,8 +25,14 @@ public class Customer : MonoBehaviour {
 	{
 		order = new SmoothieOrder();
 		currentOrder = order;
+
+		LeanTween.delayedCall(3, PlaceOrder);
 	}
 
+	private void Start()
+	{
+		
+	}
 
 	public static Dictionary<SmoothieType,string> Types = new Dictionary<SmoothieType, string>()
 	{
@@ -37,10 +43,10 @@ public class Customer : MonoBehaviour {
 
 	public static Dictionary<SmoothieModifier,string> Modifiers = new Dictionary<SmoothieModifier, string>()
 	{
-		{ SmoothieModifier.Death, "death" },
+		{ SmoothieModifier.Death, "DEATH" },
 		{ SmoothieModifier.Luck, "luck" },
-		{ SmoothieModifier.TheFunk, "the funk" },
-		{ SmoothieModifier.PunchInTheFace, "punch in the face" }
+		{ SmoothieModifier.TheFunk, "THE FUNK" },
+		{ SmoothieModifier.PunchInTheFace, "punch in the FACE" }
 	};
 
 	public static List<string> beginList = new List<string>()
@@ -67,8 +73,6 @@ public class Customer : MonoBehaviour {
 	{
 		if (Input.GetKeyDown(KeyCode.G))
 		{
-
-
 			//print("Hello");
 			PlaceOrder();
 		}
@@ -82,13 +86,15 @@ public class Customer : MonoBehaviour {
 
 		Debug.Log(order.type);
 
-		randNum = UnityEngine.Random.Range(0,5);
+		randNum = UnityEngine.Random.Range(0,4);
 		order.modifier = Modifiers[ (SmoothieModifier) randNum];
 
-		randNum = UnityEngine.Random.Range(0,5);
+		randNum = UnityEngine.Random.Range(0,4);
 
-		var customerOrder = beginList[UnityEngine.Random.Range(0,7)] + order.type + " smoothie " + hintList[randNum] + " " + order.modifier;
+		var customerOrder = beginList[UnityEngine.Random.Range(0,6)] + " " + order.type + " smoothie " + hintList[randNum] + " " + order.modifier;
 		CanvasController.Instance.ReplaceText("Smoothie Order: ", customerOrder);
+
+		print("do order");
 	}
 }
 

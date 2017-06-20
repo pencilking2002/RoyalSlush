@@ -6,7 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 {
-   
+   	public Customer currentCustomer;
+   	public RoyalSlushController Instance;
+
+   	private void Awake()
+   	{
+   		InitInstance();
+   	}
+
+
     public void OnInputClicked(InputEventData eventData)
     {
        // SceneManager.LoadScene("Main");
@@ -36,6 +44,11 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
         if (Input.GetKeyDown(KeyCode.S))
         {
             OnBanana();
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+        	SpawnCustomer();
         }
     }
 
@@ -102,5 +115,31 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 		float num = 0.02f;
 
 		return new Vector3(Random.Range(-1 * num, num),Random.Range(-1 * num, num),Random.Range(-1 * num, num ));
+	}
+
+	public void SpawnCustomer()
+	{
+		CanvasController.Instance.ClearText();
+
+		if (currentCustomer != null)
+			Destroy(currentCustomer.gameObject);
+
+		var randNum = UnityEngine.Random.Range(1,7);
+		GameObject customerPrefab = Resources.Load("CustomerPrefabs/" + randNum) as GameObject;
+
+		float randomRot = UnityEngine.Random.Range(170,240);
+
+		GameObject c = Instantiate(customerPrefab, new Vector3(0.7f, -0.7f, 3.5f), Quaternion.Euler(new Vector3(0,randomRot,0)));
+
+		c.transform.localScale = c.transform.localScale * 0.4f;
+		currentCustomer = c.GetComponent<Customer>();
+	}
+
+	private void InitInstance()
+	{
+		if (Instance == null)
+			Instance = this;
+		else
+			Destroy (gameObject);
 	}
 }
