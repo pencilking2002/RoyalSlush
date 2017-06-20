@@ -44,11 +44,11 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 		{
 			OnStrawberry();
 		}
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.H))
         {
             OnDeath();
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             OnFunky();
         }
@@ -58,7 +58,7 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
         	SpawnCustomer();
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.C))
         {
             OnPunchInTheFace();
         }
@@ -124,7 +124,7 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 
     void OnDeath()
     {
-        Instantiate(Resources.Load("Skeleton"), transform.position + randomOffset(), Random.rotation);
+        Instantiate(Resources.Load("Skull"), transform.position + randomOffset(), Random.rotation);
     }
 
     void OnPunchInTheFace()

@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 33908495439110636}
   - component: {fileID: 23687884653259976}
   - component: {fileID: 95696542241866552}
-  - component: {fileID: 54232201756109548}
   - component: {fileID: 114311773653532382}
+  - component: {fileID: 54841255022623330}
+  - component: {fileID: 136464202303432084}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -39,7 +40,7 @@ Transform:
   m_GameObject: {fileID: 1609691259634066}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,8 +83,8 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1609691259634066}
-  m_Mesh: {fileID: 4300000, guid: e3c94545abe243d489d64309785b41c7, type: 3}
---- !u!54 &54232201756109548
+  m_Mesh: {fileID: 4300000, guid: a8b2e364bca484818b8758fdfdcaeb5e, type: 3}
+--- !u!54 &54841255022623330
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,7 +106,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1609691259634066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: e3c94545abe243d489d64309785b41c7, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -126,4 +127,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f229f59143ad69447a170a655c711e43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 11
+--- !u!136 &136464202303432084
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1609691259634066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.1
+  m_Height: 1
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
