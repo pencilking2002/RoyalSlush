@@ -15,5 +15,4 @@ public class MenuButton : MonoBehaviour, IInputClickHandler{
     {
         SceneManager.LoadScene("Main");
     }
-
 }

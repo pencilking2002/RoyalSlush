@@ -12,6 +12,8 @@ public class BlenderTopButton : MonoBehaviour, IInputClickHandler{
 	public GameObject blenderTopGo;
 	Vector3 blenderGoTopStr;
 
+	public BlendButton blenderButton;
+
 	void Start(){
 		str = transform.position;
 		//blenderGoStr = blenderGo.transform.position;
@@ -38,7 +40,7 @@ public class BlenderTopButton : MonoBehaviour, IInputClickHandler{
 	{
 		if (Input.GetKeyDown(KeyCode.T))
 		{
-			OnBlend();
+			blenderButton.OnBlend();
 		}
 	}
 		
