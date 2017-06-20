@@ -35,4 +35,11 @@ public class CanvasController : MonoBehaviour {
 		this.titleText.text = titleText;
 		this.blackboaxrdText.text = bodyText;	
 	}
+
+
+	public void ClearText()
+	{
+		this.titleText.text = "";
+		this.blackboaxrdText.text = "";
+	}
 }
