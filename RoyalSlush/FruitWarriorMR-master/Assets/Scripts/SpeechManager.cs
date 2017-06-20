@@ -38,15 +38,56 @@ public class SpeechManager : MonoBehaviour
 
 		keywords.Add("Strawberry", () =>
 		{
-			// Call the OnGrapes method on every descendant object.
-			this.BroadcastMessage("OnGrapes");
+			// Call the OnStrawberry method on every descendant object.
+			this.BroadcastMessage("OnStrawberry");
 		});
 
+        keywords.Add("Banana", () =>
+        {
+            // Call the OnStrawberry method on every descendant object.
+            this.BroadcastMessage("OnBanana");
+        });
 
-		/*
+        keywords.Add("Broccolli", () =>
+        {
+            // Call the OnStrawberry method on every descendant object.
+            this.BroadcastMessage("OnBroccolli");
+        });
+
+        keywords.Add("Cabbage", () =>
+        {
+            // Call the OnStrawberry method on every descendant object.
+            this.BroadcastMessage("OnCabbage");
+        });
+
+        keywords.Add("Carrot", () =>
+        {
+            // Call the OnStrawberry method on every descendant object.
+            this.BroadcastMessage("OnCarrot");
+        });
+
+        keywords.Add("Corn", () =>
+        {
+            // Call the OnStrawberry method on every descendant object.
+            this.BroadcastMessage("OnCorn");
+        });
+
+        keywords.Add("Pumpkin", () =>
+        {
+            // Call the OnStrawberry method on every descendant object.
+            this.BroadcastMessage("OnPumpkin");
+        });
+
+        keywords.Add("Pear", () =>
+        {
+            // Call the OnStrawberry method on every descendant object.
+            this.BroadcastMessage("OnPear");
+        });
+
+        /*
 		 * CONTROL WORDS
 		 */
-		keywords.Add("Blend", () =>
+        keywords.Add("Blend", () =>
 		{
 			StartBlender();
 		});

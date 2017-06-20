@@ -16,5 +16,10 @@ public enum SmoothieItemType {
 	Cucumber,
 	Watermelon,
     Broccolli,
-    Banana
+    Banana,
+    Carrot,
+    Pear,
+    Cabbage,
+    Corn,
+    Pumpkin
 }
