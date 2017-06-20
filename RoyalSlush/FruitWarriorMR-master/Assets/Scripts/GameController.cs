@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
+	public static GameController Instance;
+
     public float leftWidth;
     public float rightWidth;
     public float height;
@@ -29,6 +31,12 @@ public class GameController : MonoBehaviour {
 
     //List of spawn fruits
     List<GameObject> spawnedFruits; 
+
+
+    void Awake()
+    {
+    	InitInstance();
+    }
 
     // Use this for initialization
     void Start () {
@@ -130,4 +138,12 @@ public class GameController : MonoBehaviour {
             yield return new WaitForSeconds(3f);
         }
     }
+
+	private void InitInstance()
+	{
+		if (Instance == null)
+			Instance = this;
+		else
+			Destroy (gameObject);
+	}
 }

@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23344084256379718}
   - component: {fileID: 54990134831252818}
   - component: {fileID: 135488259399735170}
+  - component: {fileID: 114603901497977834}
   m_Layer: 0
   m_Name: Grapes
   m_TagString: Untagged
@@ -99,6 +100,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &114603901497977834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1313810389917106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f229f59143ad69447a170a655c711e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  color: {r: 0.5735294, g: 0, b: 0.5339757, a: 1}
 --- !u!135 &135488259399735170
 SphereCollider:
   m_ObjectHideFlags: 1

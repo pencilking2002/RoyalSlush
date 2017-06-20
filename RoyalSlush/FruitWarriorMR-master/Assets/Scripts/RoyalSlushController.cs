@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 {
    	public Customer currentCustomer;
-   	public RoyalSlushController Instance;
+   	public static RoyalSlushController Instance;
 
    	private void Awake()
    	{
