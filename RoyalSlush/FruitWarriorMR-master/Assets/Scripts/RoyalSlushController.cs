@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 {
    	public Customer currentCustomer;
-   	public RoyalSlushController Instance;
+   	public static RoyalSlushController Instance;
 
    	private void Awake()
    	{
@@ -44,18 +44,23 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 		{
 			OnStrawberry();
 		}
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.H))
         {
-            OnBroccolli();
+            OnDeath();
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            OnBanana();
+            OnFunky();
         }
 
         if (Input.GetKeyDown(KeyCode.K))
         {
         	SpawnCustomer();
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            OnPunchInTheFace();
         }
     }
 
@@ -117,7 +122,22 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
         Instantiate(Resources.Load("Pear"), transform.position + randomOffset(), Random.rotation);
     }
 
-  
+    void OnDeath()
+    {
+        Instantiate(Resources.Load("Skull"), transform.position + randomOffset(), Random.rotation);
+    }
+
+    void OnPunchInTheFace()
+    {
+        Instantiate(Resources.Load("Hammer"), transform.position + randomOffset(), Random.rotation);
+    }
+
+    void OnFunky()
+    {
+        Instantiate(Resources.Load("Cheese"), transform.position + randomOffset(), Random.rotation);
+    }
+
+
 
 
 

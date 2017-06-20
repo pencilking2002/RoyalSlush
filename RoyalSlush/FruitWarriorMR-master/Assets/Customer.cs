@@ -34,19 +34,19 @@ public class Customer : MonoBehaviour {
 		
 	}
 
+
 	public static Dictionary<SmoothieType,string> Types = new Dictionary<SmoothieType, string>()
 	{
-		{ SmoothieType.Healthy, "healthy" },
-		{ SmoothieType.Sweet, "sweet" },
-		{ SmoothieType.Sour, "sour" }
+		{ SmoothieType.Healthy, "HEALTHY" },
+		{ SmoothieType.Sweet, "SWEET" },
+		{ SmoothieType.Sour, "SOUR" }
 	};
 
 	public static Dictionary<SmoothieModifier,string> Modifiers = new Dictionary<SmoothieModifier, string>()
 	{
 		{ SmoothieModifier.Death, "DEATH" },
-		{ SmoothieModifier.Luck, "luck" },
-		{ SmoothieModifier.TheFunk, "THE FUNK" },
-		{ SmoothieModifier.PunchInTheFace, "punch in the FACE" }
+		{ SmoothieModifier.Luck, "PUNCH in the FACE!!!" },
+		{ SmoothieModifier.TheFunk, "FUNKY" }
 	};
 
 	public static List<string> beginList = new List<string>()
@@ -95,7 +95,68 @@ public class Customer : MonoBehaviour {
 		CanvasController.Instance.ReplaceText("Smoothie Order: ", customerOrder);
 
 		print("do order");
+
+		switch(order.type)
+		{
+			case "HEALTHY":
+				AudioController.getSingleton().PlaySFX("healthy");
+				break;
+
+			case "SWEET":
+				AudioController.getSingleton().PlaySFX("sweet");
+				break;
+
+			case "SOUR":
+				AudioController.getSingleton().PlaySFX("sour");
+				break;
+		}
 	}
+
+	public static bool Validate(string customerSmothieMod, SmoothieItemType type)
+	{
+		bool validated = false;
+
+		if (customerSmothieMod == Modifiers[SmoothieModifier.Death])
+		{
+			if (type == SmoothieItemType.Skull)
+			{
+				validated = true;
+				CanvasController.Instance.ReplaceText("Smoothie Operator", "This smoothie tastes good!");
+			}
+		}
+
+//		else if (customerSmothieMod == Modifiers[SmoothieModifier.Luck])
+//		{
+//			//if (type == Smoothie
+//		}
+
+		else if (customerSmothieMod == Modifiers[SmoothieModifier.PunchInTheFace])
+		{
+			if (type == SmoothieItemType.Hammer)
+			{
+				validated = true;
+				CanvasController.Instance.ReplaceText("Smoothie Operator", "This smoothie tastes good!");
+
+			}
+		}
+
+		else if (customerSmothieMod == Modifiers[SmoothieModifier.TheFunk])
+		{
+			if (type == SmoothieItemType.Cheese)
+			{
+				validated = true;
+				CanvasController.Instance.ReplaceText("Smoothie Operator", "This smoothie tastes good!");
+
+			}
+		}
+
+		if (!validated)
+			CanvasController.Instance.ReplaceText("Smoothie Operator", "Ugh this tastes terrible!");
+		
+
+		return validated;
+	}
+
 }
 
 

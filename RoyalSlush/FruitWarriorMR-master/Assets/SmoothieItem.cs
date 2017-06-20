@@ -46,5 +46,8 @@ public enum SmoothieItemType {
     Pear,
     Cabbage,
     Corn,
-    Pumpkin
+    Pumpkin,
+    Skull,
+    Hammer,
+    Cheese
 }
