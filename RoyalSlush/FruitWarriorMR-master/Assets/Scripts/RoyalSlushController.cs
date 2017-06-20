@@ -87,12 +87,12 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
 
     void OnCarrot()
     {
-        Instantiate(Resources.Load("Banana"), transform.position + randomOffset(), Random.rotation);
+        Instantiate(Resources.Load("Carrot"), transform.position + randomOffset(), Random.rotation);
     }
 
     void OnPear()
     {
-        Instantiate(Resources.Load("Banana"), transform.position + randomOffset(), Random.rotation);
+        Instantiate(Resources.Load("Pear"), transform.position + randomOffset(), Random.rotation);
     }
 
 
