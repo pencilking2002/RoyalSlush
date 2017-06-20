@@ -12,6 +12,13 @@ public class RoyalSlushController : MonoBehaviour, IInputClickHandler
    	private void Awake()
    	{
    		InitInstance();
+
+        LeanTween.delayedCall(5, () =>
+        {
+
+
+            SpawnCustomer();
+        });
    	}
 
 
